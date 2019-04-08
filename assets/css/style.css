@@ -1,0 +1,16 @@
+body {
+    background: url("/assets/images/background.png");
+    background-size: 20%;
+    background-repeat: no-repeat;    
+}
+
+.display-3 {
+    padding-left: 150px;
+    text-shadow: 3px 2px red;
+
+}
+
+#questions {
+
+    padding-left: 150px;
+}
