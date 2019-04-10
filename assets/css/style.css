@@ -4,13 +4,43 @@ body {
     background-repeat: no-repeat;    
 }
 
-.display-3 {
-    padding-left: 150px;
-    text-shadow: 3px 2px red;
-
+.music {
+    padding-left: 80%;
+}
+.header.text-center.clearfix {
+    -webkit-animation: pulsate 3s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.5;
+}
+@-webkit-keyframes pulsate {
+    0% { 
+        opacity: 0.5;
+    }
+    50% { 
+        opacity: 1.0;
+    }
+    100% { 
+        opacity: 0.5;
+    }
 }
 
-#questions {
-
+.text-muted {
+    color: orangered!important;
+}
+.container {
     padding-left: 150px;
+}
+
+.row {
+    padding-left: 150px;
+}
+
+.text-muted{
+	color: blue;
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
 }
