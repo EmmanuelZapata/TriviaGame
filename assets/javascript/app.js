@@ -10,7 +10,7 @@ var trivia ={
   incorrect: 0,
   unanswered: 0,
   currentSet: 0,
-  timer: 10,
+  timer: 20,  //good pratice not to put the same number as starting number to see if it changes
   timerOn: false,
   timerID : '',
 
@@ -82,17 +82,23 @@ startGame: function() {
       if(!trivia.timerOn){
         trivia.timerId = setInterval(trivia.timerRunning, 1000);
       }
- 
-  }
+
+    //correct question placed by array of questions
+    var questionContent = Object.values(trivia.questions)[trivia.currentSet];
+    $('#question').text(questionContent);
+
+    //list of guesses setup for display
+    var questionOptions = Object.values(trivia.options)[trivia.currentSet];
+
+    // guesses pushed to the html
+    $.each(questionOptions, function(index, key){
+    $('#options').append($('<button class="option btn btn-info btn-lg">'+key+'</button>'));
+    })
+  },
+
 }
 
 
-//restart game
-//next question loop
-//set timer
-//index questions
-//array of questions
-//push to html
 //timer out
 //all questions shown/answered
 //get result
