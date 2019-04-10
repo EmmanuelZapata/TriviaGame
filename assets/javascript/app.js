@@ -42,11 +42,17 @@ question: {
      q6: 'Died',
      q7: 'Talisa'
    },
+//start game with the correct number of answers and time
+startGame: function() {
+  trivia.currentSet = 0;
+  trivia.correct = 0;
+  trivia.incorrect = 0;
+  trivia.unanswered = 0;
+  clearInterval(trivia.timerId);
 }
 
 }
 
-//questions and answers data
 //start game
 //restart game
 //next question loop
