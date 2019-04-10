@@ -42,18 +42,37 @@ question: {
      q6: 'Died',
      q7: 'Talisa'
    },
-//start game with the correct number of answers and time
+//start game with the correct number of answers and time reset
 startGame: function() {
   trivia.currentSet = 0;
   trivia.correct = 0;
   trivia.incorrect = 0;
   trivia.unanswered = 0;
   clearInterval(trivia.timerId);
+
+//restart game
+
+     // show the game
+     $('#game').show();
+
+     //  empty the result ID
+     $('#results').html('');
+
+     // get the timer to show
+     $('#timer').text(trivia.timer);
+
+     // hide the start button
+     $('#start').hide();
+
+     $('#remaining-time').show();
+
+     // ask first question
+     trivia.nextQuestion();
+
+   },
 }
 
-}
 
-//start game
 //restart game
 //next question loop
 //set timer
