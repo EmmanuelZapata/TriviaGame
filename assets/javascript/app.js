@@ -70,6 +70,20 @@ startGame: function() {
      trivia.nextQuestion();
 
    },
+
+  nextQuestion: function() {
+
+     // set timer to 10 seconds each question
+     trivia.timer = 10;
+      $('#timer').removeClass('last-seconds');
+     $('#timer').text(trivia.timer);
+
+      // who knew this was a thing?!  What?!  Prevent timer speed up...sigh
+      if(!trivia.timerOn){
+        trivia.timerId = setInterval(trivia.timerRunning, 1000);
+      }
+ 
+  }
 }
 
 
