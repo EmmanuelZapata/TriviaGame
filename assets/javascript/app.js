@@ -16,7 +16,32 @@ var trivia ={
 
 //questions and answers data
 question: {
-  
+     q1: 'How does Jon Snow die?',
+     q2: 'What is the name of Sansa\'s Direwolf?',
+     q3: 'What is the surname given to bastards born in Dorne?',
+     q4: 'Which name is given to the bastards of The Reach?',
+     q5: " How many fingertips did Stannis Baratheon chop off of Davos\' hand(s)?",
+     q6: 'Why could Jon leave the Night\'s Watch, since his vows were for life?',
+     q7: "What is that name of Robb Stark\'s wife?"
+   },
+   options: {
+     q1: ['Falls', 'Burns', 'Posion', 'Stabbed'],
+     q2: ['Puppy', 'Ghost', 'Lady', 'Wolfy'],
+     q3: ['Sands', 'River', 'Rocks', 'Water'],
+     q4: ['Flowers', 'Bastards', 'No Faces', 'Faceless Ones'],
+     q5: ['3','5','8','4'],
+     q6: ['He Quit','Died','Gave up','Left'],
+     q7: ['Anna', 'Lady Margy', 'Talisa','Doreen']
+   },
+   answers: {
+     q1: 'Stabbed',
+     q2: 'Lady',
+     q3: 'Sands',
+     q4: 'Flowers',
+     q5: '4',
+     q6: 'Died',
+     q7: 'Talisa'
+   },
 }
 
 }
