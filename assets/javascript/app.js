@@ -5,9 +5,6 @@
  $(document).on('click' , '.option', trivia.guessChecker);
 
 })
-var url = "/assets/images/background.png";
-var img = new Image();
-img.src = url;
 
 
 var trivia = {
